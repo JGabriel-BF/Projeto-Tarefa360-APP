@@ -1,9 +1,20 @@
 import style from "./Home.module.css"
+import { Sidebar } from "../../componentes/Sidebar/Sidebar"
+import { Topbar } from "../../componentes/Sidebar/Topbar/Topbar"
 
 export function Home() {
     return (
         <div className={style.conteudo}>
-            <h3> Home </h3>
+
+            <Sidebar>
+                <Topbar>
+                    <div className={style.pagina_conteudo}>
+                    <h3>Home</h3>
+                    </div>
+                </Topbar>
+
+            </Sidebar>
+        
 
         </div>
     )
